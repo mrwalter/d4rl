@@ -96,3 +96,15 @@ class KitchenMicrowaveKettleLightSliderV0(KitchenBase):
 
 class KitchenMicrowaveKettleBottomBurnerLightV0(KitchenBase):
     TASK_ELEMENTS = ['microwave', 'kettle', 'bottom burner', 'light switch']
+
+class KitchenMicrowaveKettleTopBurnerLightV0(KitchenBase):
+    TASK_ELEMENTS = ['microwave', 'kettle', 'top burner', 'light switch']
+
+class KitchenMicrowaveBottomBurnerLightSliderV0(KitchenBase):
+    TASK_ELEMENTS = ['microwave', 'bottom burner', 'light switch', 'slide cabinet']
+
+class KitchenMicrowaveKettleHingeSliderV0(KitchenBase):
+    TASK_ELEMENTS = ['microwave', 'kettle', 'hinge cabinet', 'slide cabinet']
+
+class KitchenMicrowaveKettleTopburnerLightV0(KitchenBase):
+    TASK_ELEMENTS = ['microwave', 'kettle', 'top burner', 'light switch']
