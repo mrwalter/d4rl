@@ -1,4 +1,4 @@
-from .kitchen_envs import KitchenMicrowaveKettleLightSliderV0, KitchenMicrowaveKettleBottomBurnerLightV0, KitchenMicrowaveKettleTopBurnerLightV0, KitchenMicrowaveBottomBurnerLightSliderV0, KitchenMicrowaveKettleHingeSliderV0, KitchenMicrowaveKettleTopburnerLightV0 
+from .kitchen_envs import KitchenMicrowaveKettleLightSliderV0, KitchenMicrowaveKettleBottomBurnerLightV0, KitchenMicrowaveKettleTopBurnerLightV0, KitchenMicrowaveBottomBurnerLightSliderV0, KitchenMicrowaveKettleHingeSliderV0, KitchenMicrowaveKettleTopburnerLightV0
 from gym.envs.registration import register
 
 # Smaller dataset with only positive demonstrations.
@@ -51,16 +51,16 @@ register(
     }
 )
 
-register(
-    id='kitchen-microwave-bottomburner-light-slider-v0',
-    entry_point='d4rl.kitchen:KitchenMicrowaveBottomBurnerLightSliderV0',
-    max_episode_steps=280,
-    kwargs={
-        'ref_min_score': 0.0,
-        'ref_max_score': 4.0,
-        'dataset_url': 'http://rail.eecs.berkeley.edu/datasets/offline_rl/kitchen/kitchen_microwave_kettle_bottomburner_light-v0.hdf5'
-    }
-)
+# register(
+#     id='kitchen-microwave-bottomburner-light-slider-v0',
+#     entry_point='d4rl.kitchen:KitchenMicrowaveBottomBurnerLightSliderV0',
+#     max_episode_steps=280,
+#     kwargs={
+#         'ref_min_score': 0.0,
+#         'ref_max_score': 4.0,
+#         'dataset_url': 'http://rail.eecs.berkeley.edu/datasets/offline_rl/kitchen/kitchen_microwave_kettle_bottomburner_light-v0.hdf5'
+#     }
+# )
 
 register(
     id='kitchen-microwave-kettle-hinge-slider-v0',
